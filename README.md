@@ -70,7 +70,7 @@ Download the repository to your local machine:
 git clone https://github.com/Operating-Systems-2-aka-Uniwa/Threads.git
 ```
 ### 2. Compile the source code
-Compile with gcc compiler the source codes and the flag -pthread to activate POSIX threads:
+Compile with gcc compiler the source codes and the flag `-pthread` to activate POSIX threads:
 ```
 gcc -o pthread pthread.c -pthread
 ```
@@ -152,7 +152,7 @@ Execute the executable file:
 git clone https://github.com/Operating-Systems-2-aka-Uniwa/Threads.git
 ```
 ### 2. Μεταγλώττιση του κώδικα
-Μεταγλωττίστε τον πηγαίο κώδικα με τον μεταγλωττιστή gcc και την επιλογή -pthread για να ενεργοποιήσετε τα POSIX νήματα:
+Μεταγλωττίστε τον πηγαίο κώδικα με τον μεταγλωττιστή gcc και τον διακόπτη `-pthread` για να ενεργοποιήσετε τα POSIX νήματα:
 ```
 gcc -o pthread pthread.c -pthread
 ```
