@@ -54,7 +54,7 @@
 </hr>
 
 <p align="center">
-  Athens, April 2022
+  Athens, June 2022
 </p>
 
 
