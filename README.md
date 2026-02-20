@@ -8,6 +8,11 @@
   DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
 </p>
 
+<p align="center">
+  <a href="https://www.uniwa.gr" target="_blank">University of West Attica</a> ·
+  <a href="https://ice.uniwa.gr" target="_blank">Department of Computer Engineering and Informatics</a>
+</p>
+
 ---
 
 <p align="center">
@@ -41,7 +46,6 @@
   <a href="https://ice.uniwa.gr/en/emd_person/vassilios-mamalis/" target="_blank">UNIWA Profile</a>
 </p>
 
-
 <p align="center">
   Co-supervisor: Nikolaos Psarras, Applications Lecturer<br>
 </p>
@@ -53,14 +57,23 @@
 
 </hr>
 
+---
+
 <p align="center">
   Athens, June 2022
 </p>
 
+---
+
+<p align="center">
+  <img src="https://www.softprayog.in/wp-content/uploads/2018/10/pthreads-in-c-under-linux-1.webp" width="250"/>
+</p>
 
 ---
 
-# Parallel Inner Product Calculation using C POSIX Threads
+# README
+
+## Parallel Inner Product Calculation using C POSIX Threads
 
 This repository contains an assignment for **Operating Systems II**, focusing on parallel computation using POSIX threads in C to efficiently calculate the inner product of two vectors.
 
@@ -68,18 +81,19 @@ This repository contains an assignment for **Operating Systems II**, focusing on
 
 ## Table of Contents
 
-| Section | Folder/File | Description |
-|------:|-------------|-------------|
-| 1 | `assign/` | Assignment material for the Threads workshop |
-| 1.1 | `assign/ASK-2A-OS-II-LAB-2021-22.png` | Assignment description in English |
-| 1.2 | `assign/ΑΣΚ-2Α-ΛΣ-ΙΙ-ΕΡΓ-2021-22.png` | Assignment description in Greek |
-| 2 | `src/` | Source code demonstrating thread usage |
-| 2.1 | `src/pthreads.c` | POSIX threads (pthreads) example implementation |
-| 3 | `README.md` | Repository overview and usage instructions |
+| Section | Folder/File                           | Description                                     |
+| ------: | ------------------------------------- | ----------------------------------------------- |
+|       1 | `assign/`                             | Assignment material for the Threads workshop    |
+|     1.1 | `assign/ASK-2A-OS-II-LAB-2021-22.png` | Assignment description in English               |
+|     1.2 | `assign/ΑΣΚ-2Α-ΛΣ-ΙΙ-ΕΡΓ-2021-22.png` | Assignment description in Greek                 |
+|       2 | `src/`                                | Source code demonstrating thread usage          |
+|     2.1 | `src/pthreads.c`                      | POSIX threads (pthreads) example implementation |
+|       3 | `README.md`                           | Project documentation                           |
+|       4 | `INSTALL.md`                          | Usage instructions                              |
 
 ---
 
-## Project Overview
+## 1. Project Overview
 
 The project implements a C program that calculates the **inner product** of two vectors using multiple threads.
 
@@ -93,7 +107,7 @@ The computation is parallelized by dividing the workload among multiple threads.
 
 ---
 
-## Objectives
+## 2. Objectives
 
 - Compute the inner product using **p parallel threads**.
 - Assign each thread a portion of the vector to compute.
@@ -104,7 +118,7 @@ The computation is parallelized by dividing the workload among multiple threads.
 
 ---
 
-## Key Features
+## 3. Key Features
 
 - **Dynamic Thread Creation**  
   Number of threads is determined at runtime.
@@ -120,39 +134,10 @@ The computation is parallelized by dividing the workload among multiple threads.
 
 ---
 
-## Program Structure
+## 4. Program Structure
 
 1. Read vector size `n` and thread count `p`.
 2. Allocate memory for vectors A and B.
 3. Create threads to compute partial products.
 4. Synchronize updates to shared variable `total_sum`.
 5. Output the final inner product result.
-
----
-
-## Requirements
-
-- **Operating System:** Linux or Unix-like OS
-- **Compiler:** GCC
-- **Libraries:** POSIX Threads (`pthread`)
-
----
-
-## Installation & Usage
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/Operating-Systems-2-aka-Uniwa/Threads.git
-cd Threads
-```
-
-### 2. Compile Program
-Use the `-pthread` flag to enable POSIX threads.
-```bash
-gcc -o pthread pthread.c -pthread
-```
-
-### 3. Run Program
-```bash
-./pthread
-```
